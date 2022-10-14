@@ -5,8 +5,6 @@
 # Create WP Site
 
 <p align="center">
-  <a href="https://github.com/modernwpdev/create-wp-site/actions"><img src="https://img.shields.io/github/workflow/status/modernwpdev/create-wp-site/Tests.svg" alt="Build Status"></img></a>
-  <a href="https://packagist.org/packages/modernwpdev/create-wp-site"><img src="https://img.shields.io/packagist/dt/modernwpdev/create-wp-site.svg" alt="Total Downloads"></a>
   <a href="https://packagist.org/packages/modernwpdev/create-wp-site"><img src="https://img.shields.io/packagist/v/modernwpdev/create-wp-site.svg?label=stable" alt="Latest Stable Version"></a>
   <a href="https://packagist.org/packages/modernwpdev/create-wp-site"><img src="https://img.shields.io/packagist/l/modernwpdev/create-wp-site.svg" alt="License"></a>
 </p>

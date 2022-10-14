@@ -52,7 +52,7 @@ function deleteDatabase($database)
 {
     $dbhost = 'localhost';
     $dbuser = 'root';
-    $dbpass = '';
+    $dbpass = 'root';
 
     $mysql = new mysqli($dbhost, $dbuser, $dbpass);
 

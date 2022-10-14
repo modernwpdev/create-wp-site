@@ -1,29 +1,5 @@
 <?php
 
-function recurseRmdir($dir)
-{
-    $files = array_diff(scandir($dir), array('.', '..'));
-    foreach ($files as $file) {
-        (is_dir("$dir/$file") && !is_link("$dir/$file")) ? recurseRmdir("$dir/$file") : unlink("$dir/$file");
-    }
-    return rmdir($dir);
-}
-
-function deleteDatabase($database)
-{
-    $dbhost = 'localhost';
-    $dbuser = 'root';
-    $dbpass = '';
-
-    $mysql = new mysqli($dbhost, $dbuser, $dbpass);
-
-    if ($mysql->query("DROP DATABASE $database")) {
-        echo "Database deleted successfully\n";
-    }
-
-    $mysql->close();
-}
-
 beforeEach(function () {
     $this->directory = 'cwps-test';
     $this->dbName = 'cwpstest';

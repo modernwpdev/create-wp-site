@@ -1,18 +1,22 @@
 {
-    "name": "laravel-zero/laravel-zero",
-    "description": "The Laravel Zero Framework.",
-    "keywords": ["framework", "laravel", "laravel zero", "console", "cli"],
-    "homepage": "https://laravel-zero.com",
+    "name": "modernwpdev/create-wp-site",
+    "description": "Create WP Site is a cli for quickly downloading, configuring, and installing WordPress using either core [WordPress](https://wordpress.org) or [Bedrock](https://roots.io/bedrock).",
+    "keywords": [
+        "wordpress",
+        "bedrock",
+        "cli"
+    ],
+    "homepage": "https://github.com/modernwpdev/create-wp-site",
     "type": "project",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/laravel-zero/laravel-zero/issues",
-        "source": "https://github.com/laravel-zero/laravel-zero"
+        "issues": "https://github.com/modernwpdev/create-wp-site/issues",
+        "source": "https://github.com/modernwpdev/create-wp-site"
     },
     "authors": [
         {
-            "name": "Nuno Maduro",
-            "email": "enunomaduro@gmail.com"
+            "name": "Geoff Selby",
+            "email": "geoff@geoffselby.dev"
         }
     ],
     "require": {
@@ -47,5 +51,7 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "bin": ["create-wp-site"]
+    "bin": [
+        "create-wp-site"
+    ]
 }

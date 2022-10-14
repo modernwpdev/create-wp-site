@@ -1,40 +1,63 @@
 <a href="https://supportukrainenow.org/"><img src="https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner-direct.svg" width="100%"></a>
 
-------
+---
+
+# Create WP Site
 
 <p align="center">
-    <img title="Laravel Zero" height="100" src="https://raw.githubusercontent.com/laravel-zero/docs/master/images/logo/laravel-zero-readme.png" />
+  <a href="https://github.com/modernwpdev/create-wp-site/actions"><img src="https://img.shields.io/github/workflow/status/modernwpdev/create-wp-site/Tests.svg" alt="Build Status"></img></a>
+  <a href="https://packagist.org/packages/modernwpdev/create-wp-site"><img src="https://img.shields.io/packagist/dt/modernwpdev/create-wp-site.svg" alt="Total Downloads"></a>
+  <a href="https://packagist.org/packages/modernwpdev/create-wp-site"><img src="https://img.shields.io/packagist/v/modernwpdev/create-wp-site.svg?label=stable" alt="Latest Stable Version"></a>
+  <a href="https://packagist.org/packages/modernwpdev/create-wp-site"><img src="https://img.shields.io/packagist/l/modernwpdev/create-wp-site.svg" alt="License"></a>
 </p>
 
-<p align="center">
-  <a href="https://github.com/laravel-zero/framework/actions"><img src="https://img.shields.io/github/workflow/status/laravel-zero/framework/Tests.svg" alt="Build Status"></img></a>
-  <a href="https://packagist.org/packages/laravel-zero/framework"><img src="https://img.shields.io/packagist/dt/laravel-zero/framework.svg" alt="Total Downloads"></a>
-  <a href="https://packagist.org/packages/laravel-zero/framework"><img src="https://img.shields.io/packagist/v/laravel-zero/framework.svg?label=stable" alt="Latest Stable Version"></a>
-  <a href="https://packagist.org/packages/laravel-zero/framework"><img src="https://img.shields.io/packagist/l/laravel-zero/framework.svg" alt="License"></a>
-</p>
+Create WP Site is a cli for quickly downloading, configuring, and installing WordPress using either core [WordPress](https://wordpress.org) or [Bedrock](https://roots.io/bedrock).
 
-<h4> <center>This is a <bold>community project</bold> and not an official Laravel one </center></h4>
+Save time and get straight to developing your next theme or plugin. Create WP Site handles the entire setup process, including:
 
-Laravel Zero was created by [Nuno Maduro](https://github.com/nunomaduro) and [Owen Voke](https://github.com/owenvoke), and is a micro-framework that provides an elegant starting point for your console application. It is an **unofficial** and customized version of Laravel optimized for building command-line applications.
+-   Downloading WordPress core with WP-CLI or Bedrock with Composer.
+-   Creates a database for you.
+-   Configures wp-config.php (WP core) or .env (Bedrock)
+-   Installs and configures WordPress using WP-CLI.
 
-- Built on top of the [Laravel](https://laravel.com) components.
-- Optional installation of Laravel [Eloquent](https://laravel-zero.com/docs/database/), Laravel [Logging](https://laravel-zero.com/docs/logging/) and many others.
-- Supports interactive [menus](https://laravel-zero.com/docs/build-interactive-menus/) and [desktop notifications](https://laravel-zero.com/docs/send-desktop-notifications/) on Linux, Windows & MacOS.
-- Ships with a [Scheduler](https://laravel-zero.com/docs/task-scheduling/) and  a [Standalone Compiler](https://laravel-zero.com/docs/build-a-standalone-application/).
-- Integration with [Collision](https://github.com/nunomaduro/collision) - Beautiful error reporting
+Future features include:
 
-------
+-   Automatically setting up multisite when you need it.
+-   Automatically installing and setting up WooCommerce when you need it.
+-   Install/uninstall and activate/deactivate any plugins you need.
+-   Install/uninstall themes from the jump.
+
+---
 
 ## Documentation
 
-For full documentation, visit [laravel-zero.com](https://laravel-zero.com/).
+Using Create WP Site is as straight forward as possible.
 
-## Support the development
-**Do you like this project? Support it by donating**
+### Installation
 
-- PayPal: [Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=66BYDWAT92N6L)
-- Patreon: [Donate](https://www.patreon.com/nunomaduro)
+```bash
+composer global require modernwpdev/create-wp-site
+```
+
+### Usage
+
+Run the `create-wp-site` command...
+
+```bash
+# Basic usage
+create-wp-site site-name
+
+# Using the --core flag to install vanilla WordPress
+create-wp-site site-name --core
+
+# Using the --bedrock flag to install Bedrock
+create-wp-site site-name --bedrock
+```
+
+Then, simply follow the prompts and let Create WP Site handle the rest.
+
+> Create WP Site will create a Mysql database for you. When asked for a name, make sure a database with that name does not already exist. The database user must already exist. For local development, this is likely `root`.
 
 ## License
 
-Laravel Zero is an open-source software licensed under the MIT license.
+Create WP Site is an open-source software licensed under the MIT license.
